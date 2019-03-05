@@ -1,0 +1,3 @@
+let groupsDiv = document.querySelector('#groupsFlex');
+let students = ["Abram Thau", "Anthony Erickson","Anthony Winters","Aprille Perez", "Arpana George", "Bret Allan", "Bronson Turnquist","Carl Janz", "Carrie Plank", "Claire Gibeau", "Dennis Sarmiento", "Elliott Ricklefs", "Emile Blouin", "Hunter Wiegand", "Ivan Rouskov", "James Dizon", "Jean Nielson", "Jordan Babbitt", "Katherine Haster", "Kenus Vinberg", "Leif Aesoph", "Matthew Zemek", "Micah Rabinowitz", "Michael Albaneze", "Ming Lee", "Nicholas Anderson", "Nicklas Aaland", "Percival Mariano", "Phi Hai Nguyen", "Robert Fanfant", "Ruili Gao", "Sammy Tang", "Stacy Nowak", "Vera Weikel", "William Wilkens"]
+console.table(students);
