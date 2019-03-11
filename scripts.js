@@ -1,6 +1,7 @@
 let groupsDiv = document.querySelector('#groupsFlex');
 let randomBtn = document.querySelector('#randomGroups');
 let students = ["Abram Thau", "Anthony Erickson","Anthony Winters","Aprille Perez", "Arpana George", "Bret Allan", "Bronson Turnquist","Carl Janz", "Carrie Plank", "Claire Gibeau", "Dennis Sarmiento", "Elliott Ricklefs", "Emile Blouin", "Hunter Wiegand", "Ivan Rouskov", "James Dizon", "Jean Nielson", "Jordan Babbitt", "Katherine Haster", "Kenus Vinberg", "Leif Aesoph", "Matthew Zemek", "Micah Rabinowitz", "Michael Albaneze", "Ming Lee", "Nicholas Anderson", "Nicklas Aaland", "Percival Mariano", "Phi Hai Nguyen", "Robert Fanfant", "Ruili Gao", "Sammy Tang", "Stacy Nowak", "Vera Weikel", "William Wilkens"]
+let presentStudents = ["Abram Thau", "Anthony Erickson","Anthony Winters","Aprille Perez", "Bret Allan", "Bronson Turnquist","Carl Janz", "Carrie Plank", "Claire Gibeau", "Dennis Sarmiento", "Elliott Ricklefs", "Emile Blouin", "Hunter Wiegand", "Ivan Rouskov", "James Dizon", "Jean Nielson", "Jordan Babbitt", "Katherine Haster", "Leif Aesoph", "Matthew Zemek", "Micah Rabinowitz", "Michael Albaneze", "Nicholas Anderson", "Nicklas Aaland", "Phi Hai Nguyen", "Robert Fanfant", "Ruili Gao", "Sammy Tang", "Stacy Nowak", "Vera Weikel", "William Wilkens"]
 
 //function that takes a randomized array and returns it shuffled
 function shuffleArray(arr) {
@@ -51,7 +52,7 @@ function updateView (twoDimensionalArray) {
 
 //handle random button click
 randomBtn.addEventListener('click',e=>{
-    let randomGroups = groupMaker(shuffleArray(students),4);
+    let randomGroups = groupMaker(shuffleArray(presentStudents),4);
     e.target.classList.add('hidden');
     updateView(randomGroups);
 })
