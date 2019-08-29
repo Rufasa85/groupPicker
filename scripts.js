@@ -1,8 +1,7 @@
 let groupsDiv = document.querySelector('#groupsFlex');
 let randomBtn = document.querySelector('#randomGroups');
-let students = ["Aaron Miller", "Adam Minkus", "Andrew Joung", "Aoki Cullan","Cameron Ousbey", "Christian O'keefe", "Christina Dias", "Daniel Rogalsky", "Devin Poore", "Edward Mara", "Everett Smith", "Georgia Chrisinger", "Helan Jose", "Heon Lee", "Iman Gure", "Jacob Zamano", "Jessica Huynh", "Joe Hutchinson", "Felix Zhang","Keil Aloia", "Kim Chau","Lawrence Fiesta", "Maryanne Heinbaugh", "Meghan Mullally", "Monali Chandurkar", "Monica Sochenda", "Nina Teng", "Scott Willis", "Shawn Liu", "Sofia Spagnoletti", "Svitlana Yanina", "David Li", "Weimin Yang"]
-let presentStudents = ["Aaron Miller", "Adam Minkus", "Andrew Joung", "Aoki Cullan","Cameron Ousbey", "Christian O'keefe", "Christina Dias", "Daniel Rogalsky", "Devin Poore", "Edward Mara", "Everett Smith", "Georgia Chrisinger", "Helan Jose", "Heon Lee", "Iman Gure", "Jacob Zamano", "Jessica Huynh", "Joe Hutchinson", "Felix Zhang","Keil Aloia", "Kim Chau","Lawrence Fiesta", "Maryanne Heinbaugh", "Meghan Mullally", "Monali Chandurkar", "Monica Sochenda", "Scott Willis", "Shawn Liu", "Sofia Spagnoletti", "Svitlana Yanina", "David Li", "Weimin Yang"]
-
+let students = ["Alexandria Farris", "Amberlee Ha", "Amjed Ayoub", "Ana Todorovic", "Andrew Lin", "Andrew Weiss", "Christopher Bortel", "Collin Wheetman", "Daniel Grigg", "Eric Cadwell", "Gabriel Eyer", "George Wyscaver", "Jandy Stephens", "J-Anne Carlson", "John Traut", "Jonathan Chan", "Joshua Jonas", "Julia Graves", "Leah Munson", "Mike Stevens", "Michelle Santiago",  "Neha Lal", "Nicole Antoinette Roberts", "Rachel Jones", "Rogelio Zavala", "Ronak Patel", "Shivali Bhalla",  "Swathi Priya", "Theresa Aguilar","Thomas Stillmac", "Tyler Winters", "Wenhao Wu", "William Edwards"];
+let presentStudents = ["Alexandria Farris", "Amberlee Ha", "Amjed Ayoub", "Ana Todorovic", "Andrew Lin", "Andrew Weiss", "Christopher Bortel", "Collin Wheetman", "Daniel Grigg", "Eric Cadwell", "Gabriel Eyer", "George Wyscaver", "Jandy Stephens", "J-Anne Carlson", "John Traut", "Jonathan Chan", "Joshua Jonas", "Julia Graves", "Leah Munson", "Mike Stevens", "Michelle Santiago",  "Neha Lal", "Nicole Antoinette Roberts", "Rachel Jones", "Rogelio Zavala",  "Shivali Bhalla",  "Swathi Priya", "Theresa Aguilar","Thomas Stillmac", "Tyler Winters", "Wenhao Wu", "William Edwards"];
 //function that takes a randomized array and returns it shuffled
 function shuffleArray(arr) {
     let arrCopy = arr.slice();
@@ -65,6 +64,8 @@ randomBtn.addEventListener('click',e=>{
     e.target.classList.add('hidden');
     updateView(randomGroups);
 })
+
+
 
 //TODO: float list of students, allow selectable absentees
 
