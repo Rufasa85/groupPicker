@@ -1,7 +1,63 @@
 let groupsDiv = document.querySelector('#groupsFlex');
 let randomBtn = document.querySelector('#randomGroups');
-let students = ["Alexandria Farris", "Amberlee Ha", "Amjed Ayoub", "Ana Todorovic", "Andrew Lin", "Andrew Weiss", "Christopher Bortel", "Collin Wheetman", "Daniel Grigg", "Eric Cadwell", "Gabriel Eyer", "George Wyscaver", "Jandy Stephens", "J-Anne Carlson", "John Traut", "Jonathan Chan", "Joshua Jonas", "Julia Graves", "Leah Munson", "Mike Stevens", "Michelle Santiago",  "Neha Lal", "Nicole Antoinette Roberts", "Rachel Jones", "Rogelio Zavala", "Ronak Patel", "Shivali Bhalla",  "Swathi Priya", "Theresa Aguilar","Thomas Stillmac", "Tyler Winters", "Wenhao Wu", "William Edwards"];
-let presentStudents = ["Alexandria Farris", "Amberlee Ha", "Amjed Ayoub", "Ana Todorovic", "Andrew Lin", "Andrew Weiss", "Christopher Bortel", "Collin Wheetman", "Daniel Grigg", "Eric Cadwell", "Gabriel Eyer", "George Wyscaver", "Jandy Stephens", "J-Anne Carlson", "John Traut", "Jonathan Chan", "Joshua Jonas", "Julia Graves", "Leah Munson", "Mike Stevens", "Michelle Santiago",  "Neha Lal", "Nicole Antoinette Roberts", "Rachel Jones", "Rogelio Zavala",  "Shivali Bhalla",  "Swathi Priya", "Theresa Aguilar","Thomas Stillmac", "Tyler Winters", "Wenhao Wu", "William Edwards"];
+let students =  [
+    "Andrew Bergstrom",
+    "Anthony Perez",
+    "Arati Bhandwalkar",
+    "Ariel Strayer",
+    "Brian Cox",
+    "Bryce Pingul",
+    "Cass Chamberlain",
+    "Cody Samuels",
+    "Derek Watson",
+    "Dominic Parker",
+    "Rick Garcia",
+    "Evan Pacholski",
+    "Hannibal Wyman",
+    "Indy Minhas",
+    "James Fisher",
+    "Kyle Anderson",
+    "Maria Helbling",
+    "Matthew Grega",
+    "Michael Rettus",
+    "Michael Shenk",
+    "Nick Mardon",
+    "Nick Pasch",
+    "Nicole Remy",
+    "Trish Ness",
+    "sam grose",
+    "Vinny Varghese",
+    "Zack Deacon"
+  ];
+let presentStudents = [
+    "Andrew Bergstrom",
+    "Anthony Perez",
+    "Arati Bhandwalkar",
+    "Ariel Strayer",
+    "Brian Cox",
+    "Bryce Pingul",
+    "Cass Chamberlain",
+    "Cody Samuels",
+    "Derek Watson",
+    "Dominic Parker",
+    "Rick Garcia",
+    "Evan Pacholski",
+    "Hannibal Wyman",
+    "Indy Minhas",
+    "James Fisher",
+    "Kyle Anderson",
+    "Maria Helbling",
+    "Matthew Grega",
+    "Michael Rettus",
+    "Michael Shenk",
+    "Nick Mardon",
+    "Nick Pasch",
+    "Nicole Remy",
+    "Trish Ness",
+    "sam grose",
+    "Vinny Varghese",
+    "Zack Deacon"
+  ];
 //function that takes a randomized array and returns it shuffled
 function shuffleArray(arr) {
     let arrCopy = arr.slice();
@@ -50,10 +106,10 @@ function updateView (twoDimensionalArray) {
         let thisGroup = document.createElement('div');
         thisGroup.classList.add('groupDiv')
         groupsDiv.appendChild(thisGroup);
-        thisGroup.innerHTML = `<ul></ul>`
+        thisGroup.innerHTML = `<ol></ol>`
         groupCount++;
         array.forEach(student=>{
-            thisGroup.querySelector('ul').innerHTML += `<li>${student}</li>`
+            thisGroup.querySelector('ol').innerHTML += `<li>${student}</li>`
         })
     })
 }
