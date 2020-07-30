@@ -47,6 +47,7 @@ let presentStudents = [
     "James Fisher",
     "Kyle Anderson",
     "Maria Helbling",
+    "Martin Mudlin",
     "Matthew Grega",
     "Michael Rettus",
     "Michael Shenk",
