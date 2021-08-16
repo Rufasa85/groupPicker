@@ -37,3 +37,15 @@ button {
     box-shadow: 1px 1px; 
     font-size:1.5em;  
 }
+
+.spicy {
+    color:#ff7675
+}
+
+.medium {
+    color:#f1c40f
+}
+
+.mild {
+    color:#2ecc71
+}
